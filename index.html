@@ -9,23 +9,27 @@
   </head>
   <body>
     <!--Шапка-->
-    <header class="header align-items-center flex-column flex-md-row custom-pink">
-      <div class="header-cont flex-column d-flex flex-md-row justify-content-between mx-auto px-3 " style="max-width: 960px;">
-        <img class="logo me-3" src="logo-Photoroom.png" alt="Лого">
-        <div class="header-title text-white fs-2 pt-3 pb-3 ps-3 m-auto">My page </div>
-      </div>
+    <header class="header container-fluid">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-5 col-md-1">
+          <img class="logo img-fluid" src="logo-Photoroom.png" alt="Лого">
+        </div> 
+        <div class="col-7 col-md-3 text-end text-md-start">
+          <div class="header-title text-white">My page </div>
+        </div>  
         <!-- Навигация -->
-        <nav class="menu d-flex flex-column flex-md-row justify-content-md-end w-100 g-3 g-md-5 bg-transparent py-3">
-          <a class="navcont btn btn-link" href="#linkedlist">Список гиперссылок</a>
-          <a class="navcont btn btn-link" href="#table">Таблица</a>
-          <a class="navcont btn btn-link" href="#form">Форма</a>
-      </nav>
+        <nav class="menu-btns col-12 col-md-8 d-flex flex-column flex-md-row justify-content-md-end">
+          <a class="navcont btn btn-link mb-2 mb-md-0" href="#linkedlist">Список гиперссылок</a>
+          <a class="navcont btn btn-link mb-2 mb-md-0" href="#table">Таблица</a>
+          <a class="navcont btn btn-link mb-2 mb-md-0" href="#form">Форма</a>
+        </nav>
+      </div>  
     </header>
 
-    <div class="container-fluid justify-content-center col-md-8 mt-4">
+    <div class="content container-lg mt-4">
       <!-- Список гиперссылок -->
       <a id="linkedlist"></a>
-      <div class="link-list order-2 order-md-1 col-12">
+      <div class="link-list order-lg-1 col-12">
         <ul>
           <li><a href="http://kubsu.ru">КубГУ абсолютная гиперссылка</a></li>
             <li>
@@ -141,164 +145,168 @@
               >
             </li>
           </ul>
-        <div> 
+        </div>
         <!-- Таблица -->
         <a id="table"></a>
-        <div class="table-container">
-          <table class="table order-2 order-md-1 table-bordered table-striped mt-4">
-            <thead>
-              <tr>
-                <th id="1" colspan="2">Машина</th>
-                <th id="3">Описание</th>
-                <th id="4">Цена</th>
-              </tr>
-            </thead>
+        <div style="overflow-x: auto;">
+          <div class="table-container col-12">
+            <table class="table order-lg-2 table-striped mt-4">
+              <thead>
+                <tr>
+                  <th id="1" colspan="2">Машина</th> 
+                  <th id="3">Описание</th>
+                  <th id="4">Цена</th>
+                </tr>
+              </thead>
 
-            <tbody>
-              <tr>
-                <td>BMW</td>
-                <td>BMW M8 Competition, BMW M8 Coupe и BMW M850i xDrive Coupe</td>
-                <td>
-                  Автомобили M BMW 8 серии Coupe доставят Вам максимальное
-                  удовольствие от вождения в атмосфере спортивного стиля и роскоши
-                  как на дорогах, так и на гоночной трассе
-                </td>
-                <td>от 12 500 000 руб.</td>
-              </tr>
-              <tr>
-                <td>Mercedes-Benz</td>
-                <td>Mercedes-Benz AMG GT 63 S</td>
-                <td>
-                  Mercedes-Benz AMG — это автомобили, которые воплощают передовые
-                  достижения автомобильной индустрии. Они разрабатываются
-                  специальным подразделением компании в Аффальтербахе и
-                  отличаются: потрясающей динамикой, отточенной управляемостью,
-                  стильным и эффектным внешним видом и интерьером, уникальными
-                  опциями комфорта.
-                </td>
-                <td>от 9 900 000 руб.</td>
-              </tr>
-              <tr>
-                <td>Nissan</td>
-                <td>Nissan GT-R</td>
-                <td>
-                  Nissan GT-R — автомобиль, выпускаемый японской маркой Nissan с
-                  2007 года. Он имеет компоновку сидений 2 + 2 и считается
-                  одновременно спортивным автомобилем и Grand tourer.Автомобиль
-                  построен на платформе PM и оснащён инновационными концепциями и
-                  технологиями, такими как улучшенная аэродинамика, двигатель
-                  VR38DETT, активная подвеска и система полного привода ATTESA
-                  E-TS Pro.
-                </td>
-                <td>от 7 000 000 руб.</td>
-              </tr>
-              <tr>
-                <td>Porsche</td>
-                <td>Porsche 911 GT3 RS</td>
-                <td>
-                  Porsche 911 GT3 RS — это двухместное спортивное купе
-                  премиум-класса. Технические характеристики: оппозитная
-                  атмосферная бензиновая шестерка объёмом 3996 кубических
-                  сантиметров; мощность — 520 лошадиных сил при 8250 об/мин и 470
-                  Нм крутящего момента при 6000 оборотах коленчатого вала в
-                  минуту; семиступенчатая преселективная роботизированная коробка
-                  передач с двумя сцеплениями;максимальная скорость — 312
-                  километров в час.
-                </td>
-                <td>35 000 000 руб.</td>
-              </tr>
-              <tr>
-                <td>Ferrari</td>
-                <td>Ferrari F8 Tributo</td>
-                <td>
-                  Ferrari F8 Tributo — это двухместное купе, которое было
-                  представлено на международном автосалоне в Женеве 5 марта 2019
-                  года. Основные характеристики: 720-сильный бензиновый двигатель
-                  V8 turbo — самый мощный мотор V8 в истории Ferrari;
-                  исключительная управляемость благодаря применению передовых
-                  решений в области аэродинамики; система контроля управляемости
-                  Side Slip Angle Control новейшей версии 6.1; система Ferrari
-                  Dynamic Enhancer (FDE+), которая индивидуально регулирует
-                  давление в тормозных механизмах.
-                </td>
-                <td>от 30 000 000 руб</td>
-              </tr>
-              <tr>
-                <td>Pagani</td>
-                <td>Pagani Zonda</td>
-                <td>
-                  Pagani Zonda — среднемоторный спортивный автомобиль итальянского
-                  производителя спортивных автомобилей Pagani. Были выпущены как
-                  2-дверные купе, так и родстер, а также третий новый вариант —
-                  barchetta. Конструкция в основном выполнена из углеродного
-                  волокна.
-                </td>
-                <td>от 171 000 000 руб.</td>
-              </tr>
-            </tbody>
-          </table>
-      </div> 
+              <tbody>
+                <tr>
+                  <td>BMW</td>
+                  <td>BMW M8 Competition, BMW M8 Coupe и BMW M850i xDrive Coupe</td>
+                  <td>
+                    Автомобили M BMW 8 серии Coupe доставят Вам максимальное
+                    удовольствие от вождения в атмосфере спортивного стиля и роскоши
+                    как на дорогах, так и на гоночной трассе
+                  </td>
+                  <td>от 12 500 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Mercedes-Benz</td>
+                  <td>Mercedes-Benz AMG GT 63 S</td>
+                  <td>
+                    Mercedes-Benz AMG — это автомобили, которые воплощают передовые
+                    достижения автомобильной индустрии. Они разрабатываются
+                    специальным подразделением компании в Аффальтербахе и
+                    отличаются: потрясающей динамикой, отточенной управляемостью,
+                    стильным и эффектным внешним видом и интерьером, уникальными
+                    опциями комфорта.
+                  </td>
+                  <td>от 9 900 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Nissan</td>
+                  <td>Nissan GT-R</td>
+                  <td>
+                    Nissan GT-R — автомобиль, выпускаемый японской маркой Nissan с
+                    2007 года. Он имеет компоновку сидений 2 + 2 и считается
+                    одновременно спортивным автомобилем и Grand tourer.Автомобиль
+                    построен на платформе PM и оснащён инновационными концепциями и
+                    технологиями, такими как улучшенная аэродинамика, двигатель
+                    VR38DETT, активная подвеска и система полного привода ATTESA
+                    E-TS Pro.
+                  </td>
+                  <td>от 7 000 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Porsche</td>
+                  <td>Porsche 911 GT3 RS</td>
+                  <td>
+                    Porsche 911 GT3 RS — это двухместное спортивное купе
+                    премиум-класса. Технические характеристики: оппозитная
+                    атмосферная бензиновая шестерка объёмом 3996 кубических
+                    сантиметров; мощность — 520 лошадиных сил при 8250 об/мин и 470
+                    Нм крутящего момента при 6000 оборотах коленчатого вала в
+                    минуту; семиступенчатая преселективная роботизированная коробка
+                    передач с двумя сцеплениями;максимальная скорость — 312
+                    километров в час.
+                  </td>
+                  <td>35 000 000 руб.</td>
+                </tr>
+                <tr>
+                  <td>Ferrari</td>
+                  <td>Ferrari F8 Tributo</td>
+                  <td>
+                    Ferrari F8 Tributo — это двухместное купе, которое было
+                    представлено на международном автосалоне в Женеве 5 марта 2019
+                    года. Основные характеристики: 720-сильный бензиновый двигатель
+                    V8 turbo — самый мощный мотор V8 в истории Ferrari;
+                    исключительная управляемость благодаря применению передовых
+                    решений в области аэродинамики; система контроля управляемости
+                    Side Slip Angle Control новейшей версии 6.1; система Ferrari
+                    Dynamic Enhancer (FDE+), которая индивидуально регулирует
+                    давление в тормозных механизмах.
+                  </td>
+                  <td>от 30 000 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Pagani</td>
+                  <td>Pagani Zonda</td>
+                  <td>
+                    Pagani Zonda — среднемоторный спортивный автомобиль итальянского
+                    производителя спортивных автомобилей Pagani. Были выпущены как
+                    2-дверные купе, так и родстер, а также третий новый вариант —
+                    barchetta. Конструкция в основном выполнена из углеродного
+                    волокна.
+                  </td>
+                  <td>от 171 000 000 руб.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> 
+        </div> 
 
-      <!-- Форма -->
-      <a id="form" class="mt-4"></a>
-      <h2 class="ps-4 py-1 rounded-pill m-3 mt-5">Зарегистрируйтесь на нашем сайте</h2>
-      <form action="test@example.com" class="needs-validation" novalidate>
-        <div class="mb-3">
-          <label for="name" class="form-label">ФИО:</label>
-          <input type="text" id="name" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="phone" class="form-label">Телефон:</label>
-          <input type="tel" id="phone" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">E-mail:</label>
-          <input type="email" id="email" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="birthdate" class="form-label">Дата рождения:</label>
-          <input type="date" id="birthdate" class="form-control" required>
-        </div>
-        <fieldset class="mb-3">
-          <legend class="col-form-label">Пол:</legend>
-          <div class="form-check">
-            <input type="radio" name="gender" id="male" class="form-check-input">
-            <label for="male" class="form-check-label">М</label>
+        <!-- Форма -->
+        <a id="form" class="mt-4"></a>
+        <h2 class="ps-4 py-1 rounded-pill m-3 mt-5">Зарегистрируйтесь на нашем сайте</h2>
+        <form action="test@example.com" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">ФИО:</label>
+            <input type="text" id="name" class="form-control" required>
           </div>
-          <div class="form-check">
-            <input type="radio" name="gender" id="female" class="form-check-input">
-            <label for="female" class="form-check-label">Ж</label>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Телефон:</label>
+            <input type="tel" id="phone" class="form-control" required>
           </div>
-        </fieldset>
-        <div class="mb-3">
-          <label for="prog-lang" class="form-label">Любимый язык программирования:</label>
-          <select name="prog-lang" id="prog-lang" class="form-select" multiple>
-            <option value="1">JavaScript</option>
-            <option value="2">PHP</option>
-            <option value="3">Python</option>
-            <option value="4">Java</option>
-            <option value="5">Pascal</option>
-            <option value="6">C</option>
-            <option value="7">C++</option>
-            <option value="8">Haskell</option>
-            <option value="9">Clojure</option>
-            <option value="10">Prolog</option>
-            <option value="11">Scala</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="bio" class="form-label">Биография:</label>
-          <textarea name="bio" id="bio" class="form-control"></textarea>
-        </div>
-        <div class="form-check mb-3">
-          <input type="checkbox" class="form-check-input" id="contract">
-          <label for="contract" class="form-check-label">С контрактом ознакомлен(-а)</label>
-        </div>
-        <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
-      </form>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="birthdate" class="form-label">Дата рождения:</label>
+            <input type="date" id="birthdate" class="form-control" required>
+          </div>
+          <fieldset class="mb-3">
+            <legend class="col-form-label">Пол:</legend>
+            <div class="form-check">
+              <input type="radio" name="gender" id="male" class="form-check-input">
+              <label for="male" class="form-check-label">М</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" name="gender" id="female" class="form-check-input">
+              <label for="female" class="form-check-label">Ж</label>
+            </div>
+          </fieldset>
+          <div class="mb-3">
+            <label for="prog-lang" class="form-label">Любимый язык программирования:</label>
+            <select name="prog-lang" id="prog-lang" class="form-select" multiple>
+              <option value="1">JavaScript</option>
+              <option value="2">PHP</option>
+              <option value="3">Python</option>
+              <option value="4">Java</option>
+              <option value="5">Pascal</option>
+              <option value="6">C</option>
+              <option value="7">C++</option>
+              <option value="8">Haskell</option>
+              <option value="9">Clojure</option>
+              <option value="10">Prolog</option>
+              <option value="11">Scala</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="bio" class="form-label">Биография:</label>
+            <textarea name="bio" id="bio" class="form-control"></textarea>
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="contract">
+            <label for="contract" class="form-check-label">С контрактом ознакомлен(-а)</label>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
+        </form>
+      </div>
     </div>
     <!--Подвал -->
-    <footer class="footer text-start text-white custom-pink py-3">
+
+    <footer class="footer container-fluid text-start text-white py-3">
       <p>&copy; Мерзлякова В.В. 27/2</p>
     </footer>
   </body>
