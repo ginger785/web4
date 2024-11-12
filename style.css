@@ -37,7 +37,33 @@ h2 {
     background-color: #bc2c79;
 }
 
+.link-list {
+    display: flex;
+    order: 0;
+}
+
+.table-container {
+    display: flex;
+    order: 1
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 /* подвал */
 footer {
     background-color: #c61f6a;
+}
+
+@media(max-width:769px) {
+
+    .link-list {
+        order: 0;
+    }
+
+    .table-container {
+        order: -1;
+    }
 }
