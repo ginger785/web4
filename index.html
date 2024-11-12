@@ -15,7 +15,7 @@
           <img class="logo img-fluid" src="logo-Photoroom.png" alt="Лого">
         </div> 
         <div class="col-7 col-md-3 text-end text-md-start">
-          <div class="header-title text-white">My page </div>
+          <div class="header-title text-white fs-3">My page </div>
         </div>  
         <!-- Навигация -->
         <nav class="menu-btns col-12 col-md-8 d-flex flex-column flex-md-row justify-content-md-end">
@@ -29,12 +29,13 @@
     <div class="content container-lg mt-4">
       <!-- Список гиперссылок -->
       <a id="linkedlist"></a>
-      <div class="link-list order-lg-1 col-12">
-        <ul>
-          <li><a href="http://kubsu.ru">КубГУ абсолютная гиперссылка</a></li>
-            <li>
-              <a href="https://kubsu.ru">КубГУ гиперссылка с протоколом https</a>
-          </li>
+      <div class="row">
+        <div class="link-list col-12 order-md-1 order-2 ">
+          <ul>
+            <li><a href="http://kubsu.ru">КубГУ абсолютная гиперссылка</a></li>
+              <li>
+                <a href="https://kubsu.ru">КубГУ гиперссылка с протоколом https</a>
+            </li>
             <li>
               <a href="https://kubsu.ru">
                 <img src="kubanskiy.jpg" width="250" height="250" alt="Логотип КубГУ"
@@ -86,13 +87,7 @@
                 >Ссылка на фрагмент страницы стороннего сайта</a
               >
             </li>
-            <img
-              src="un-1.jpg"
-              width="300"
-              height="200"
-              alt="Здание университета"
-              usemap="#kubsu"
-            />
+            <img src="un-1.jpg" width="300" height="200" alt="Здание университета" usemap="#kubsu"/>
             <li>
               <map name="kubsu">
                 <area
@@ -132,25 +127,24 @@
                 </li>
                 <li>
                   <a
-                    href="https://www.kubsu.ru/ru/science"
-                    title="Наука и инновации КубГУ"
-                    >Вступайте в научное сообщество КубГУ</a
+                      href="https://www.kubsu.ru/ru/science"
+                      title="Наука и инновации КубГУ"
+                      >Вступайте в научное сообщество КубГУ</a
                   >
                 </li>
               </ol>
             </li>
             <li>
               <a href="ftp://user:pass123@adress.ru/Temp/file.txt"
-                >ссылка на файл на сервере FTP с авторизацией</a
-              >
-            </li>
+                >ссылка на файл на сервере FTP с авторизацией</a>
+            </li>  
           </ul>
         </div>
         <!-- Таблица -->
         <a id="table"></a>
         <div style="overflow-x: auto;">
           <div class="table-container col-12">
-            <table class="table order-lg-2 table-striped mt-4">
+            <table class="table order-1 table-striped table-responsive mt-4">
               <thead>
                 <tr>
                   <th id="1" colspan="2">Машина</th> 
@@ -244,68 +238,68 @@
             </table>
           </div> 
         </div> 
+      </div>  
 
-        <!-- Форма -->
-        <a id="form" class="mt-4"></a>
-        <h2 class="ps-4 py-1 rounded-pill m-3 mt-5">Зарегистрируйтесь на нашем сайте</h2>
-        <form action="test@example.com" class="needs-validation" novalidate>
-          <div class="mb-3">
-            <label for="name" class="form-label">ФИО:</label>
-            <input type="text" id="name" class="form-control" required>
+      <!-- Форма -->
+      <a id="form" class="mt-4"></a>
+      <h2 class="ps-4 py-1 rounded-pill m-3 mt-5">Зарегистрируйтесь на нашем сайте</h2>
+      <form action="test@example.com" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">ФИО:</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Телефон:</label>
+          <input type="tel" id="phone" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="birthdate" class="form-label">Дата рождения:</label>
+          <input type="date" id="birthdate" class="form-control" required>
+        </div>
+        <fieldset class="mb-3">
+          <legend class="col-form-label">Пол:</legend>
+          <div class="form-check">
+            <input type="radio" name="gender" id="male" class="form-check-input">
+            <label for="male" class="form-check-label">М</label>
           </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label">Телефон:</label>
-            <input type="tel" id="phone" class="form-control" required>
+          <div class="form-check">
+            <input type="radio" name="gender" id="female" class="form-check-input">
+            <label for="female" class="form-check-label">Ж</label>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail:</label>
-            <input type="email" id="email" class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <label for="birthdate" class="form-label">Дата рождения:</label>
-            <input type="date" id="birthdate" class="form-control" required>
-          </div>
-          <fieldset class="mb-3">
-            <legend class="col-form-label">Пол:</legend>
-            <div class="form-check">
-              <input type="radio" name="gender" id="male" class="form-check-input">
-              <label for="male" class="form-check-label">М</label>
-            </div>
-            <div class="form-check">
-              <input type="radio" name="gender" id="female" class="form-check-input">
-              <label for="female" class="form-check-label">Ж</label>
-            </div>
-          </fieldset>
-          <div class="mb-3">
-            <label for="prog-lang" class="form-label">Любимый язык программирования:</label>
-            <select name="prog-lang" id="prog-lang" class="form-select" multiple>
-              <option value="1">JavaScript</option>
-              <option value="2">PHP</option>
-              <option value="3">Python</option>
-              <option value="4">Java</option>
-              <option value="5">Pascal</option>
-              <option value="6">C</option>
-              <option value="7">C++</option>
-              <option value="8">Haskell</option>
-              <option value="9">Clojure</option>
-              <option value="10">Prolog</option>
-              <option value="11">Scala</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="bio" class="form-label">Биография:</label>
-            <textarea name="bio" id="bio" class="form-control"></textarea>
-          </div>
-          <div class="form-check mb-3">
-            <input type="checkbox" class="form-check-input" id="contract">
-            <label for="contract" class="form-check-label">С контрактом ознакомлен(-а)</label>
-          </div>
-          <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
-        </form>
-      </div>
+        </fieldset>
+        <div class="mb-3">
+          <label for="prog-lang" class="form-label">Любимый язык программирования:</label>
+          <select name="prog-lang" id="prog-lang" class="form-select" multiple>
+            <option value="1">JavaScript</option>
+            <option value="2">PHP</option>
+            <option value="3">Python</option>
+            <option value="4">Java</option>
+            <option value="5">Pascal</option>
+            <option value="6">C</option>
+            <option value="7">C++</option>
+            <option value="8">Haskell</option>
+            <option value="9">Clojure</option>
+            <option value="10">Prolog</option>
+            <option value="11">Scala</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="bio" class="form-label">Биография:</label>
+          <textarea name="bio" id="bio" class="form-control"></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="contract">
+          <label for="contract" class="form-check-label">С контрактом ознакомлен(-а)</label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
+      </form>
     </div>
-    <!--Подвал -->
 
+    <!--Подвал -->
     <footer class="footer container-fluid text-start text-white py-3">
       <p>&copy; Мерзлякова В.В. 27/2</p>
     </footer>
